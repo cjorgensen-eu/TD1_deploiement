@@ -3,11 +3,11 @@
 # Ce script verifie si le système utilise apt or yum, puis installe git avec lles commandes addaptées
 
 if command -v apt >/dev/null; then
-  apt update
-  apt install -y git-all
+  sudo apt update
+  sudo apt install -y git-all
 elif command -v yum >/dev/null; then
-  yum check-update
-  yum install -y git
+  sudo yum check-update
+  sudo yum install -y git
 else
   echo "Ni apt ni yuml ne sont disponible sur votre système : veuillez consulter votre administrateur"
 fi
