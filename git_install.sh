@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ce script verifie si le système utilise apt or yum, puis installe git avec lles commandes addaptées
+# Ce script verifie si le système utilise apt or yum, puis installe git via les commandes addaptées
 
 if command -v apt >/dev/null; then
   sudo apt update
