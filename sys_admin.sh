@@ -7,46 +7,46 @@ read -p "Quelle commande d'administration système souhaitez-vous executer ? ('h
 
 case "$CMD" in
   "installer_openstack")
-    sh openstack_install.sh
+    sh /home/user/TD1_deploiement/openstack_install.sh
     ;;
   "installer_git")
-    sh git_install.sh
+    sh /home/user/TD1_deploiement/git_install.sh
     ;;
   "installer_jenkins")
-    sh jenkins_install.sh
+    sh /home/user/TD1_deploiement/jenkins_install.sh
     ;;
   "installer_paquet")
-    sh package_install.sh
+    sh /home/user/TD1_deploiement/package_install.sh
     ;;
   "maj_systeme")
-    sh system_upgrade.sh
+    sh /home/user/TD1_deploiement/system_upgrade.sh
     ;;
   "afficher_paquets")
-    sh list_packages.sh
+    sh /home/user/TD1_deploiement/list_packages.sh
     ;;
   "supprimer_paquet")
-    sh package_delete.sh
+    sh /home/user/TD1_deploiement/package_delete.sh
     ;;
   "ajouter_utilisateur")
-    sh add_user.sh
+    sh /home/user/TD1_deploiement/add_user.sh
     ;;
   "ajouter_groupe")
-    sh add_group.sh
+    sh /home/user/TD1_deploiement/add_group.sh
     ;;
   "afficher_groupes_utilisateur")
-    sh show_user_groups.sh
+    sh /home/user/TD1_deploiement/show_user_groups.sh
     ;;
   "statut_service")
-    sh service_status.sh
+    sh /home/user/TD1_deploiement/service_status.sh
     ;;
   "redemare_service")
-    sh service_restart.sh
+    sh /home/user/TD1_deploiement/service_restart.sh
     ;;
   "active_service")
-    sh service_switch.sh
+    sh /home/user/TD1_deploiement/service_switch.sh
     ;;
   "help")
-    sh list_options.sh
+    sh /home/user/TD1_deploiement/list_options.sh
     ;;
   *)
     echo "Commande inconnue !"
